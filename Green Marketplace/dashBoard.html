@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .dashboard-cards {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .order-table th, .order-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .order-table th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#">Home</a>
+        <a href="#">Orders</a>
+        <a href="#">Earnings</a>
+        <a href="#">Activities</a>
+        <a href="#">Settings</a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to the Dashboard</h1>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>150</p>
+            </div>
+            <div class="card">
+                <h3>Pending Orders</h3>
+                <p>20</p>
+            </div>
+            <div class="card">
+                <h3>Earnings</h3>
+                <p>$5,000</p>
+            </div>
+            <div class="card">
+                <h3>Activities</h3>
+                <p>45</p>
+            </div>
+        </div>
+
+        <!-- Order History Table -->
+        <h2>Order History</h2>
+        <table class="order-table">
+            <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>#001</td>
+                <td>John Doe</td>
+                <td>2024-12-15</td>
+                <td>Completed</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>#002</td>
+                <td>Jane Smith</td>
+                <td>2024-12-16</td>
+                <td>Pending</td>
+                <td>$75</td>
+            </tr>
+            <tr>
+                <td>#003</td>
+                <td>Bob Johnson</td>
+                <td>2024-12-17</td>
+                <td>Cancelled</td>
+                <td>$0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

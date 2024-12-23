@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Product Listings</title>
+</head>
+<body>
+    <h1>Product Listings</h1>
+    <form method="post" action="productUpload.php" enctype="multipart/form-data">
+        Product Name: <input type="text" name="product_name" value="" /> <br>
+        Price: <input type="number" name="price" step="0.01" value="" /> <br>
+        Quantity: <input type="number" name="quantity" value="" /> <br>
+        Description: <textarea name="description" rows="4" cols="30"></textarea> <br>
+        Category: 
+        <select name="category">
+            <option value="reusable">Reusable</option>
+            <option value="organic">Organic</option>
+            <option value="green_tech">Green Tech</option>
+            <option value="recycling">Recycling</option>
+        </select> <br>
+        Product Image: <input type="file" name="product_image" /> <br>
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+</body>
+</html>

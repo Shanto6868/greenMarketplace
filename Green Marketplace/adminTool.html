@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Admin Tools</title>
+</head>
+<body>
+    <h1>Admin Tools</h1>
+
+    <!-- Vendor Applications Table -->
+    <h2>Vendor Applications</h2>
+    <table border="1">
+        <tr>
+            <th>Vendor Name</th>
+            <th>Application Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Example Vendor 1</td>
+            <td>2024-12-01</td>
+            <td>Pending</td>
+            <td>
+                <button type="button">Approve</button>
+                <button type="button">Reject</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Example Vendor 2</td>
+            <td>2024-12-15</td>
+            <td>Pending</td>
+            <td>
+                <button type="button">Approve</button>
+                <button type="button">Reject</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Search Inputs -->
+    <h2>Search</h2>
+    <form method="post" action="searchHandler.php">
+        Search Users: <input type="text" name="searchUsers" placeholder="Enter username" />
+        <input type="submit" value="Search" />
+    </form>
+    <br>
+    <form method="post" action="searchHandler.php">
+        Search Products: <input type="text" name="searchProducts" placeholder="Enter product name" />
+        <input type="submit" value="Search" />
+    </form>
+
+    <!-- Generate Report Button -->
+    <h2>Generate Reports</h2>
+    <form method="post" action="generateReport.php">
+        <button type="submit">Generate Report</button>
+    </form>
+</body>
+</html>
